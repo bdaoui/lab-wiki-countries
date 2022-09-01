@@ -10,7 +10,7 @@ const CountriesList = () => {
 	return (
     <div style={{display: "flex", flexDirection: "column"}}>
       {list.map((item) => {
-			return <Link to="/details" key={uuidv4()}> {item.name.common.toString()} </Link>				
+			return <Link to={`/details/${item.alpha3Code}`} key={uuidv4()}  > {item.name.common.toString()} </Link>				
       })}
     </div>
   );
