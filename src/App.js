@@ -9,6 +9,7 @@ import CountriesList from './components/CountriesList';
 import CountryDetails from './components/ContryDetails';
 
 
+import Data from "./countries.json";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <Navbar  /> 
       <Routes>
         <Route path='/' element={<CountriesList />} />
-        <Route path='/details' element={<CountryDetails />} />
+        <Route path='/details/:id' element={<CountryDetails data={Data} />} />
       </Routes>
 
     </div>

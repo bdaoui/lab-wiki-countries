@@ -1,7 +1,13 @@
-const CountryDetails = ()=>{
+import { useParams } from "react-router-dom";
+
+
+const CountryDetails = ({Data})=>{
+    let {id } = useParams();
+
     return(
+
         <div>
-            Country Details
+            {id}
         </div>
     )
 }
