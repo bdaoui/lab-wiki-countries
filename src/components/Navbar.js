@@ -5,12 +5,11 @@ const Navbar = () =>{
 
 
     return(
-        <ul>
-            <li>
-                <Link to="/">Countries</Link>
-                <Link to="/details">Details</Link>
-
-            </li>
+        <ul style={{display: "flex", justifyContent: "center", padding:"1vw", backgroundColor: "black"}}>
+            <li style={{ listStyle: "none"}}>
+                <Link to="/" >Countries</Link>
+            </li> 
+        
         </ul>
     )
 }
